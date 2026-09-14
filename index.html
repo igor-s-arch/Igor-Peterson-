@@ -4,42 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b0b0b">
-  <title>Maranhão | Vitrine Oficial</title>
+  <title>Maranhão | Links Oficiais</title>
   <style>
-    :root{--yellow:#ffd51f;--yellow2:#ffbf00;--black:#0b0b0b;--red:#e4232d;--white:#fff;--muted:#bdbdbd}
+    :root{--yellow:#ffd51f;--yellow2:#ffbf00;--black:#0b0b0b;--red:#e4232d;--white:#fff;--muted:#bdbdbd;--green:#18b866}
     *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff}
-    .wrap{width:min(100%,560px);margin:auto;min-height:100vh;background:linear-gradient(180deg,#111 0%,#050505 100%)}
-    .hero{padding:28px 18px 20px;text-align:center;background:radial-gradient(circle at top,#2c2200 0,#111 48%,#080808 100%)}
-    .logo-badge{width:92px;height:92px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:#000;font-size:44px;font-weight:900;border:4px solid #111;box-shadow:0 0 0 3px var(--yellow)}
-    .hero h1{margin:0;font-size:33px;line-height:1}.hero .tag{display:inline-block;margin-top:8px;background:var(--red);padding:7px 14px;border-radius:999px;font-weight:900;font-size:14px}.hero p{color:#ddd;line-height:1.45;margin:14px auto 0;max-width:420px}
-    .quick{display:grid;gap:12px;padding:18px}
-    .quick a{display:flex;align-items:center;gap:14px;text-decoration:none;padding:17px;border-radius:18px;font-weight:900;border:1px solid #2f2f2f;background:#171717;color:#fff;box-shadow:0 12px 28px rgba(0,0,0,.28)}
-    .quick .primary{background:linear-gradient(135deg,var(--yellow),var(--yellow2));color:#000;border:none}.quick .whats{background:linear-gradient(135deg,#0dbb59,#0b8f45);border:none}.icon{font-size:28px;min-width:36px}.quick small{display:block;font-weight:500;opacity:.75;margin-top:3px}
-    .benefit-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 18px 22px}.benefit{background:#151515;border:1px solid #2e2e2e;border-radius:16px;padding:15px;text-align:center}.benefit b{display:block;color:var(--yellow);font-size:23px;margin-bottom:4px}.benefit span{font-size:12px;color:#ddd;line-height:1.35}
-    .section{padding:22px 18px;border-top:1px solid #242424}.section h2{margin:0 0 5px;font-size:24px}.section .lead{margin:0 0 15px;color:#aaa;font-size:14px}
-    .chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px}.chip{white-space:nowrap;border:none;border-radius:999px;padding:10px 13px;background:#222;color:#fff;font-weight:800;cursor:pointer}.chip.active{background:var(--yellow);color:#000}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.product{background:#151515;border:1px solid #292929;border-radius:18px;overflow:hidden}.photo{aspect-ratio:1/1;background:linear-gradient(135deg,#2b2b2b,#171717);display:grid;place-items:center;font-size:44px}.pbody{padding:12px}.pbody h3{font-size:15px;margin:0 0 6px}.price{font-size:19px;font-weight:900;color:var(--yellow)}.details{font-size:12px;color:#aaa;margin-top:5px;line-height:1.4}.buy{display:block;text-align:center;text-decoration:none;background:var(--yellow);color:#000;border-radius:12px;padding:10px;margin-top:10px;font-weight:900;font-size:13px}
-    .empty{grid-column:1/-1;background:#141414;border:1px dashed #454545;border-radius:18px;padding:24px 18px;text-align:center;color:#aaa}.empty strong{display:block;color:#fff;margin-bottom:6px}
-    .store{background:#141414;border-radius:18px;padding:17px;line-height:1.55}.store strong{color:var(--yellow)}
-    .footer{text-align:center;color:#777;font-size:12px;padding:24px 18px 34px}
-    @media(max-width:380px){.grid{grid-template-columns:1fr}.benefit-row{grid-template-columns:1fr}.hero h1{font-size:29px}}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#070707;color:#fff}
+    .wrap{width:min(100%,560px);margin:auto;min-height:100vh;background:linear-gradient(180deg,#121212 0%,#070707 55%,#0c0c0c 100%);box-shadow:0 0 45px rgba(0,0,0,.65)}
+    .top{padding:18px 16px 8px;text-align:center;background:radial-gradient(circle at top,#3b2d00 0,#171717 52%,#0a0a0a 100%)}
+    .profile{width:92px;height:92px;margin:0 auto 12px;border-radius:50%;overflow:hidden;border:4px solid var(--yellow);background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+    .profile img{width:100%;height:100%;object-fit:cover}
+    .brand-logo{width:min(88%,360px);max-height:110px;object-fit:contain;display:block;margin:0 auto 8px}
+    .tag{display:inline-block;background:var(--red);padding:7px 14px;border-radius:999px;font-weight:900;font-size:13px;letter-spacing:.2px}
+    .top p{margin:12px auto 16px;max-width:390px;color:#ddd;line-height:1.45;font-size:14px}
+    .hero-poster{margin:8px 14px 0;border-radius:24px;overflow:hidden;border:1px solid #333;box-shadow:0 18px 45px rgba(0,0,0,.45);background:#111}
+    .hero-poster img{display:block;width:100%;height:auto}
+    .quick{display:grid;gap:12px;padding:18px 16px}
+    .quick a{display:flex;align-items:center;gap:14px;text-decoration:none;padding:16px;border-radius:18px;font-weight:900;border:1px solid #2d2d2d;background:linear-gradient(180deg,#1a1a1a,#111);color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.28);transition:.18s transform,.18s opacity}
+    .quick a:active{transform:scale(.985);opacity:.92}
+    .quick .primary{background:linear-gradient(135deg,var(--yellow),var(--yellow2));color:#000;border:none}
+    .quick .whats{background:linear-gradient(135deg,#1acb72,#0d944f);border:none;color:#fff}
+    .icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:rgba(255,255,255,.10);font-size:22px;flex:0 0 42px}
+    .primary .icon{background:rgba(0,0,0,.10)}
+    .txt{flex:1}.quick small{display:block;font-weight:500;opacity:.75;margin-top:3px;line-height:1.35}.arrow{font-size:22px;opacity:.55}
+    .benefit-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px 22px}.benefit{background:#151515;border:1px solid #2e2e2e;border-radius:18px;padding:16px;text-align:center}.benefit b{display:block;color:var(--yellow);font-size:26px;margin-bottom:5px}.benefit span{font-size:12px;color:#ddd;line-height:1.35}
+    .section{padding:24px 16px;border-top:1px solid #242424}.section h2{margin:0 0 5px;font-size:25px}.section .lead{margin:0 0 15px;color:#aaa;font-size:14px}
+    .chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{white-space:nowrap;border:none;border-radius:999px;padding:10px 13px;background:#222;color:#fff;font-weight:800;cursor:pointer}.chip.active{background:var(--yellow);color:#000}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.product{background:#151515;border:1px solid #292929;border-radius:18px;overflow:hidden}.photo{aspect-ratio:1/1;background:linear-gradient(135deg,#2b2b2b,#171717);display:grid;place-items:center;font-size:44px}.photo img{width:100%;height:100%;object-fit:cover}.pbody{padding:12px}.pbody h3{font-size:15px;margin:0 0 6px}.price{font-size:19px;font-weight:900;color:var(--yellow)}.details{font-size:12px;color:#aaa;margin-top:5px;line-height:1.4}.buy{display:block;text-align:center;text-decoration:none;background:var(--yellow);color:#000;border-radius:12px;padding:10px;margin-top:10px;font-weight:900;font-size:13px}
+    .empty{grid-column:1/-1;background:#141414;border:1px dashed #454545;border-radius:18px;padding:26px 18px;text-align:center;color:#aaa;line-height:1.45}.empty strong{display:block;color:#fff;margin-bottom:6px;font-size:16px}
+    .store{background:linear-gradient(145deg,#171717,#0e0e0e);border:1px solid #292929;border-radius:18px;padding:18px;line-height:1.6}.store strong{color:var(--yellow);font-size:17px}.maplink{display:block;text-align:center;margin-top:14px;padding:12px;border-radius:12px;background:#232323;color:#fff;text-decoration:none;font-weight:800}
+    .footer{text-align:center;color:#777;font-size:12px;padding:22px 16px 34px}
+    @media(max-width:380px){.grid{grid-template-columns:1fr}.benefit-row{grid-template-columns:1fr}.profile{width:82px;height:82px}.quick a{padding:14px}.top{padding-left:12px;padding-right:12px}}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <header class="hero">
-      <div class="logo-badge">M</div>
-      <h1>Maranhão</h1>
-      <div class="tag">A loja que te vende fiado!</div>
-      <p>Moda, calçados, bolsas, acessórios e novidades em um só lugar.</p>
+    <header class="top">
+      <div class="profile"><img src="WhatsApp%20Image%202026-09-12%20at%2015.53.43.jpeg" alt="Maranhão"></div>
+      <img class="brand-logo" src="WhatsApp%20Image%202026-09-10%20at%2016.10.08.jpeg" alt="Maranhão Ditando Moda">
+      <div class="tag">A LOJA QUE TE VENDE FIADO!</div>
+      <p>Moda, calçados, bolsas, acessórios e muito mais. Tudo em um só lugar.</p>
     </header>
 
+    <div class="hero-poster">
+      <img src="ChatGPT%20Image%2014_09_2026,%2011_08_39.png" alt="Maranhão - links e vantagens">
+    </div>
+
     <section class="quick">
-      <a class="primary" href="https://igor-s-arch.github.io/maranhao-crediario/" target="_blank" rel="noopener"><span class="icon">📝</span><span>FAÇA SEU PRÉ-CADASTRO<small>Rápido e fácil</small></span></a>
-      <a class="whats" href="https://wa.me/message/O2UZUHSNZDJTC1" target="_blank" rel="noopener"><span class="icon">💬</span><span>FALE NO WHATSAPP<small>Atendimento da loja</small></span></a>
-      <a href="#produtos"><span class="icon">🛍️</span><span>NOSSOS PRODUTOS<small>Veja a vitrine da Maranhão</small></span></a>
-      <a href="https://www.google.com/maps/search/?api=1&query=Rua+S%C3%A3o+Paulo+do+Norte%2C+40%2C+Centro%2C+Graja%C3%BA%2C+MA%2C+65940-000" target="_blank" rel="noopener"><span class="icon">📍</span><span>COMO CHEGAR<small>Abra a localização no mapa</small></span></a>
+      <a class="primary" href="https://igor-s-arch.github.io/maranhao-crediario/" target="_blank" rel="noopener">
+        <span class="icon">📝</span><span class="txt">FAÇA SEU PRÉ-CADASTRO<small>Rápido, prático e direto pelo celular</small></span><span class="arrow">›</span>
+      </a>
+      <a class="whats" href="https://wa.me/message/O2UZUHSNZDJTC1" target="_blank" rel="noopener">
+        <span class="icon">💬</span><span class="txt">FALE NO WHATSAPP<small>Tire suas dúvidas com nossa equipe</small></span><span class="arrow">›</span>
+      </a>
+      <a href="#produtos">
+        <span class="icon">🛍️</span><span class="txt">NOSSOS PRODUTOS<small>Veja a vitrine da Maranhão</small></span><span class="arrow">›</span>
+      </a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+S%C3%A3o+Paulo+do+Norte%2C+40%2C+Centro%2C+Graja%C3%BA%2C+MA%2C+65940-000" target="_blank" rel="noopener">
+        <span class="icon">📍</span><span class="txt">COMO CHEGAR<small>Abra a localização da loja no mapa</small></span><span class="arrow">›</span>
+      </a>
     </section>
 
     <section class="benefit-row">
@@ -49,7 +72,7 @@
 
     <section class="section" id="produtos">
       <h2>Nossos Produtos</h2>
-      <p class="lead">Sua vitrine online da Maranhão.</p>
+      <p class="lead">Vitrine online da Maranhão.</p>
       <div class="chips" id="chips">
         <button class="chip active" data-cat="Todos">Todos</button>
         <button class="chip" data-cat="Moda">Moda</button>
@@ -61,10 +84,15 @@
     </section>
 
     <section class="section">
-      <div class="store"><strong>📍 Loja Maranhão</strong><br>Rua São Paulo do Norte, nº 40 – Centro<br>Grajaú/MA – CEP 65940-000</div>
+      <div class="store">
+        <strong>📍 Loja Maranhão</strong><br>
+        Rua São Paulo do Norte, nº 40 – Centro<br>
+        Grajaú/MA – CEP 65940-000
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Rua+S%C3%A3o+Paulo+do+Norte%2C+40%2C+Centro%2C+Graja%C3%BA%2C+MA%2C+65940-000" target="_blank" rel="noopener">ABRIR NO MAPA</a>
+      </div>
     </section>
 
-    <footer class="footer">Maranhão • Ditando moda • Grajaú/MA</footer>
+    <footer class="footer">Maranhão • Ditando Moda • Grajaú/MA</footer>
   </main>
 
   <script>
@@ -75,12 +103,12 @@
     function render(categoria='Todos') {
       const lista = categoria === 'Todos' ? produtos : produtos.filter(p => p.categoria === categoria);
       if (!lista.length) {
-        grid.innerHTML = '<div class="empty"><strong>Vitrine preparada ✅</strong>Os produtos serão adicionados aqui com foto, nome, preço, tamanhos e botão direto para o WhatsApp.</div>';
+        grid.innerHTML = '<div class="empty"><strong>Em breve, novidades por aqui ✨</strong>A vitrine já está preparada para receber fotos, preços, tamanhos e numerações dos produtos da Maranhão.</div>';
         return;
       }
       grid.innerHTML = lista.map(p => `
         <article class="product">
-          <div class="photo">${p.imagem ? `<img src="${p.imagem}" alt="${p.nome}" style="width:100%;height:100%;object-fit:cover">` : '🛍️'}</div>
+          <div class="photo">${p.imagem ? `<img src="${p.imagem}" alt="${p.nome}">` : '🛍️'}</div>
           <div class="pbody">
             <h3>${p.nome}</h3>
             <div class="price">${p.preco}</div>
