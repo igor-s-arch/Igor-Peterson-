@@ -3,34 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f6c900">
-  <title>Maranhão | Links Oficiais</title>
+  <meta name="theme-color" content="#0b0b0b">
+  <title>Maranhão | Vitrine Oficial</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#ffd51f 0%,#f7c800 44%,#f7f3df 44%,#f7f3df 100%);color:#171717;min-height:100vh}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px}.card{width:100%;max-width:520px;background:#fff;border-radius:28px;padding:30px 22px;box-shadow:0 20px 60px rgba(0,0,0,.16);text-align:center}.brand{width:86px;height:86px;border-radius:24px;margin:0 auto 14px;display:grid;place-items:center;background:#111;color:#ffd51f;font-size:42px;font-weight:900}.eyebrow{margin:0 0 6px;font-size:13px;font-weight:800;letter-spacing:2px;color:#6b5a00}h1{font-size:30px;line-height:1.05;margin:0 0 10px}.subtitle{margin:0 auto 22px;max-width:360px;color:#666;line-height:1.5}.actions{display:grid;gap:12px}.btn{display:block;text-decoration:none;background:#f5f5f5;color:#111;padding:17px 18px;border-radius:16px;font-weight:800;font-size:16px;border:1px solid #e6e6e6}.btn-primary{background:#111;color:#fff;border-color:#111;box-shadow:0 10px 24px rgba(0,0,0,.15)}.info{margin-top:24px;padding:20px;border-radius:18px;background:#fff8cf;text-align:left}.info h2{font-size:17px;margin:0 0 12px}.info p{margin:0;color:#4b4b4b;line-height:1.55}.benefits{display:grid;gap:8px;margin-top:16px}.benefits span{display:block;background:#fff;padding:12px;border-radius:12px;font-size:14px;font-weight:700}.footer{margin:20px 0 0;color:#888;font-size:12px}@media(max-width:420px){.page{align-items:flex-start;padding-top:18px}.card{padding:24px 16px;border-radius:24px}h1{font-size:27px}.btn{font-size:15px;padding:16px 14px}}
+    :root{--yellow:#ffd51f;--yellow2:#ffbf00;--black:#0b0b0b;--red:#e4232d;--white:#fff;--muted:#bdbdbd}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff}
+    .wrap{width:min(100%,560px);margin:auto;min-height:100vh;background:linear-gradient(180deg,#111 0%,#050505 100%)}
+    .hero{padding:28px 18px 20px;text-align:center;background:radial-gradient(circle at top,#2c2200 0,#111 48%,#080808 100%)}
+    .logo-badge{width:92px;height:92px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:#000;font-size:44px;font-weight:900;border:4px solid #111;box-shadow:0 0 0 3px var(--yellow)}
+    .hero h1{margin:0;font-size:33px;line-height:1}.hero .tag{display:inline-block;margin-top:8px;background:var(--red);padding:7px 14px;border-radius:999px;font-weight:900;font-size:14px}.hero p{color:#ddd;line-height:1.45;margin:14px auto 0;max-width:420px}
+    .quick{display:grid;gap:12px;padding:18px}
+    .quick a{display:flex;align-items:center;gap:14px;text-decoration:none;padding:17px;border-radius:18px;font-weight:900;border:1px solid #2f2f2f;background:#171717;color:#fff;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+    .quick .primary{background:linear-gradient(135deg,var(--yellow),var(--yellow2));color:#000;border:none}.quick .whats{background:linear-gradient(135deg,#0dbb59,#0b8f45);border:none}.icon{font-size:28px;min-width:36px}.quick small{display:block;font-weight:500;opacity:.75;margin-top:3px}
+    .benefit-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 18px 22px}.benefit{background:#151515;border:1px solid #2e2e2e;border-radius:16px;padding:15px;text-align:center}.benefit b{display:block;color:var(--yellow);font-size:23px;margin-bottom:4px}.benefit span{font-size:12px;color:#ddd;line-height:1.35}
+    .section{padding:22px 18px;border-top:1px solid #242424}.section h2{margin:0 0 5px;font-size:24px}.section .lead{margin:0 0 15px;color:#aaa;font-size:14px}
+    .chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px}.chip{white-space:nowrap;border:none;border-radius:999px;padding:10px 13px;background:#222;color:#fff;font-weight:800;cursor:pointer}.chip.active{background:var(--yellow);color:#000}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.product{background:#151515;border:1px solid #292929;border-radius:18px;overflow:hidden}.photo{aspect-ratio:1/1;background:linear-gradient(135deg,#2b2b2b,#171717);display:grid;place-items:center;font-size:44px}.pbody{padding:12px}.pbody h3{font-size:15px;margin:0 0 6px}.price{font-size:19px;font-weight:900;color:var(--yellow)}.details{font-size:12px;color:#aaa;margin-top:5px;line-height:1.4}.buy{display:block;text-align:center;text-decoration:none;background:var(--yellow);color:#000;border-radius:12px;padding:10px;margin-top:10px;font-weight:900;font-size:13px}
+    .empty{grid-column:1/-1;background:#141414;border:1px dashed #454545;border-radius:18px;padding:24px 18px;text-align:center;color:#aaa}.empty strong{display:block;color:#fff;margin-bottom:6px}
+    .store{background:#141414;border-radius:18px;padding:17px;line-height:1.55}.store strong{color:var(--yellow)}
+    .footer{text-align:center;color:#777;font-size:12px;padding:24px 18px 34px}
+    @media(max-width:380px){.grid{grid-template-columns:1fr}.benefit-row{grid-template-columns:1fr}.hero h1{font-size:29px}}
   </style>
 </head>
 <body>
-  <main class="page">
-    <section class="card">
-      <div class="brand">M</div>
-      <p class="eyebrow">LOJA MARANHÃO</p>
-      <h1>A loja que te vende fiado!</h1>
-      <p class="subtitle">Moda, calçados, bolsas, acessórios e muito mais.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="https://wa.me/message/O2UZUHSNZDJTC1" target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
-        <a class="btn" href="https://igor-s-arch.github.io/maranhao-crediario/" target="_blank" rel="noopener">📝 Fazer meu pré-cadastro</a>
-        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rua+S%C3%A3o+Paulo+do+Norte%2C+40%2C+Centro%2C+Graja%C3%BA%2C+MA%2C+65940-000" target="_blank" rel="noopener">📍 Como chegar na loja</a>
-      </div>
-      <div class="info">
-        <h2>Informações da loja</h2>
-        <p><strong>Endereço:</strong><br>Rua São Paulo do Norte, nº 40 – Centro<br>Grajaú/MA – CEP 65940-000</p>
-        <div class="benefits">
-          <span>💳 Até 10x no crediário próprio</span>
-          <span>💰 8% de desconto pagando antes do vencimento</span>
-        </div>
-      </div>
-      <p class="footer">Maranhão • Tudo mais perto de você.</p>
+  <main class="wrap">
+    <header class="hero">
+      <div class="logo-badge">M</div>
+      <h1>Maranhão</h1>
+      <div class="tag">A loja que te vende fiado!</div>
+      <p>Moda, calçados, bolsas, acessórios e novidades em um só lugar.</p>
+    </header>
+
+    <section class="quick">
+      <a class="primary" href="https://igor-s-arch.github.io/maranhao-crediario/" target="_blank" rel="noopener"><span class="icon">📝</span><span>FAÇA SEU PRÉ-CADASTRO<small>Rápido e fácil</small></span></a>
+      <a class="whats" href="https://wa.me/message/O2UZUHSNZDJTC1" target="_blank" rel="noopener"><span class="icon">💬</span><span>FALE NO WHATSAPP<small>Atendimento da loja</small></span></a>
+      <a href="#produtos"><span class="icon">🛍️</span><span>NOSSOS PRODUTOS<small>Veja a vitrine da Maranhão</small></span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+S%C3%A3o+Paulo+do+Norte%2C+40%2C+Centro%2C+Graja%C3%BA%2C+MA%2C+65940-000" target="_blank" rel="noopener"><span class="icon">📍</span><span>COMO CHEGAR<small>Abra a localização no mapa</small></span></a>
     </section>
+
+    <section class="benefit-row">
+      <div class="benefit"><b>10x</b><span>No crediário próprio</span></div>
+      <div class="benefit"><b>8%</b><span>de desconto pagando antes do vencimento</span></div>
+    </section>
+
+    <section class="section" id="produtos">
+      <h2>Nossos Produtos</h2>
+      <p class="lead">Sua vitrine online da Maranhão.</p>
+      <div class="chips" id="chips">
+        <button class="chip active" data-cat="Todos">Todos</button>
+        <button class="chip" data-cat="Moda">Moda</button>
+        <button class="chip" data-cat="Calçados">Calçados</button>
+        <button class="chip" data-cat="Bolsas">Bolsas</button>
+        <button class="chip" data-cat="Acessórios">Acessórios</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="store"><strong>📍 Loja Maranhão</strong><br>Rua São Paulo do Norte, nº 40 – Centro<br>Grajaú/MA – CEP 65940-000</div>
+    </section>
+
+    <footer class="footer">Maranhão • Ditando moda • Grajaú/MA</footer>
   </main>
+
+  <script>
+    const produtos = [];
+    const grid = document.getElementById('grid');
+    const chips = [...document.querySelectorAll('.chip')];
+
+    function render(categoria='Todos') {
+      const lista = categoria === 'Todos' ? produtos : produtos.filter(p => p.categoria === categoria);
+      if (!lista.length) {
+        grid.innerHTML = '<div class="empty"><strong>Vitrine preparada ✅</strong>Os produtos serão adicionados aqui com foto, nome, preço, tamanhos e botão direto para o WhatsApp.</div>';
+        return;
+      }
+      grid.innerHTML = lista.map(p => `
+        <article class="product">
+          <div class="photo">${p.imagem ? `<img src="${p.imagem}" alt="${p.nome}" style="width:100%;height:100%;object-fit:cover">` : '🛍️'}</div>
+          <div class="pbody">
+            <h3>${p.nome}</h3>
+            <div class="price">${p.preco}</div>
+            <div class="details">${p.detalhes || ''}</div>
+            <a class="buy" target="_blank" rel="noopener" href="${p.whatsapp}">TENHO INTERESSE</a>
+          </div>
+        </article>`).join('');
+    }
+
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      render(chip.dataset.cat);
+    }));
+
+    render();
+  </script>
 </body>
 </html>
